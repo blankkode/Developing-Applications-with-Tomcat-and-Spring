@@ -17,12 +17,12 @@ public class CarService {
     );
 
     public List<Car> getCars(int count) {
-        System.out.println("1A"+count);
+
         if (count >= cars.size() || count < 0) {
-            System.out.println("2A"+count);
+
             return cars;
         }
-        System.out.println("3A"+count);
+        
         return cars.subList(0, count);
     }
 }
